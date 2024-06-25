@@ -48,6 +48,8 @@ basicStartButton.addEventListener("click", function(){
   basicImg.src = flagPngArr[selectNum];
   basicImg.height = "150";
   console.log(basicImg);
+  basicInputAns.value = "";
+  basicOutput.innerText = "";
   basicInputImg.appendChild(basicImg);
 })
 console.log(selectNum);
@@ -112,6 +114,8 @@ advanceStartButton.addEventListener("click", function(){
   selectString = arrOfKana[Math.ceil(Math.random() * (arrOfKana.length - 1))];
   console.log("selectString; ", selectString);
   advanceInput.innerText = selectString;
+  advanceInputAns.value = "";
+  advanceOutput.innerText = "";
 })
 
 // 回答を入力し、正誤判定をする。
