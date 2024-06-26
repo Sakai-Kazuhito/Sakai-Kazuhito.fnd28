@@ -62,9 +62,9 @@ basicAnswerButton.addEventListener("click", function(){
   console.log(flagPngArr[selectNum], correct);
   console.log(basicInputValue);
   if (basicInputValue === correct) {
-    basicOutput.innerText = "正解！！"
-  }else{
-    basicOutput.innerText = "不正解です。残念！！"
+    basicOutput.innerText = "正解！！";
+  }else {
+    basicOutput.innerText = `残念！ 正解は『 ${correct} 』です。`;
   }
 });
 
@@ -125,9 +125,9 @@ advanceAnswerButton.addEventListener("click", function(){
   console.log(selectString, correct);
   console.log(advanceInputValue);
   if (advanceInputValue === correct) {
-    advanceOutput.innerText = "正解！！"
+    advanceOutput.innerText = "正解！！";
   }else{
-    advanceOutput.innerText = "不正解です。残念！！"
+    advanceOutput.innerText = `残念！ 正解は『 ${correct} 』です。`;
   }
 });
 
@@ -142,13 +142,11 @@ const tranceOutput = document.getElementById("trance-output");
 tranceInputButton.addEventListener("click", function(){
   let tranceInputValue = tranceInputText.value;
   let keyArr = tranceInputValue.split("");
-  let codeArr = [];
-  let codes = "";
+  let tranceString = "";
   for (const key of keyArr){
-    codeArr.push(flagSignal[key]);
-    codes = codeArr.join(" ／ ");
+    tranceString = tranceString + `${key} : ${flagSignal[key]} ／ `
   }
-  tranceOutput.innerText = codes;
+  tranceOutput.innerText = tranceString;
 })
 
 
