@@ -92,7 +92,7 @@ label{
 }
 
 .output{
-  height: 50px;
+  height: auto;
   margin: auto;
   text-align: center;
   font-size: 200%;
