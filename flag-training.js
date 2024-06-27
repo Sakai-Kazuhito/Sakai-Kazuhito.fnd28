@@ -3,7 +3,7 @@
 // 回答ボタンを押すと、正解不正解のアラートがでてくる。
 
 // idを変数化
-const basicInputImg =document.getElementById("input-start-img");
+// const basicInputImg =document.getElementById("input-start-img");
 const basicStartButton = document.getElementById("basic-start-button");
 const basicAnswerButton = document.getElementById("basic-answer-button");
 const basicInputAns = document.getElementById("basic-input-answer");
@@ -36,21 +36,21 @@ const flagOriginalObj = {
 };
 
 // 開始ボタンを押すとランダムに原画を選択し、選択された原画の絵を出す。
-const basicImg = document.createElement("img");
-basicImg.src = "flag_bs_start.gif";
-basicImg.height = "150";
-basicInputImg.appendChild(basicImg);
+const basicImg = document.getElementById("basic-img");
+// basicImg.src = "flag_bs_start.gif";
+// basicImg.height = 150;
+// basicInputImg.appendChild(basicImg);
 let selectNum;
 
 basicStartButton.addEventListener("click", function(){
   selectNum = Math.ceil(Math.random() * (flagPngArr.length - 1));
   console.log("selectNum; ", selectNum);
   basicImg.src = flagPngArr[selectNum];
-  basicImg.height = "150";
+  // basicImg.height = "150";
   console.log(basicImg);
   basicInputAns.value = "";
   basicOutput.innerText = "";
-  basicInputImg.appendChild(basicImg);
+  // basicInputImg.appendChild(basicImg);
 })
 console.log(selectNum);
 

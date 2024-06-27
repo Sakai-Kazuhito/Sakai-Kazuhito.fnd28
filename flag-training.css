@@ -1,105 +1,97 @@
 body{
   background-color: rgb(185, 185, 145);
+  display: block;
 }
 
 .maintext{
   background-color: green;
   color: bisque;
+  width: 95%;
+  margin: 0 auto;
   text-align: center;
-  font-size: 300%;
 }
 
-#subtext{
+.subtext{
   background-color: rgb(58, 133, 58);
-  width: 300px;
-  margin: 0 auto 0 5%;
-  text-align: center;
   color: bisque;
-  width: 300px;
+  text-align: center;
+  width: max-content;
+  margin: 2% auto;
 }
 
 #basic{
-  background-color: rgb(112, 209, 209);
-  width: 90%;
-  height: auto;
-  margin: 0 auto 0 7%;
+  background-color:  rgb(112, 209, 209);
+  margin: 0 auto;
+  height: max-content;
+  width: 95%;
+  display: grid;
 }
 
 .traning{
   color: red;
-  margin: 30px auto 0 3%;
-  font-size: 200%;
+  margin: 0 auto 0 2%;
 }
 
 .traning-content{
   color: black;
-  margin: 0 auto 0 3%;
+  margin: 0 auto 0 2%;
 }
 
 .training-procedure{
   color: black;
-  margin: 0 auto 0 7%;
+  margin: 0 auto 0 5%;
 }
 
 #basic-start-div{
-  background-color: aquamarine;
-  height: 200px;
-  margin: 10px 10% 0 10%;
-  display: flex;
+  margin: 5% auto;
+  height: max-content;
   position: relative;
+  display: grid;
+}
+
+#basic-img{
+  width: 90%;
+  height: 90%;
+  margin: 1% auto;
 }
 
 .start-button{
-  position: absolute;
-  top: 40%;
-  left: 10%;
   background-color: orange;
   font-weight: bold;
-  font-size: 150%;
+  font-size: 130%;
   color: blue;
-}
-
-#input-start-img{
-  position: absolute;
-  top: 10%;
-  left: 35%;
+  width: max-content;
+  margin: 2% auto;
 }
 
 #basic-ans-div{
-  background-color: aquamarine;
-  height: auto;
-  margin: 20px 10% 20px 10%;
   display: flex;
-  position: relative;
+  margin: 0 auto;
 }
 
 label{
   font-weight: bold;
-  font-size: 150%;
-  margin: auto;
-  position: relative;
+  font-size: 120%;
+  margin: auto 0;
 }
 
 .answer-text{
-  margin: 2% auto 2% 0px;
-  position: relative;
-  font-size: 200%;
-  width: 100px;
+  height: 1.2em;
+  font-size: 120%;
+  width: 50%;
   text-align: center;
+  margin: auto 0;
 }
 
-
 .answer-button{
-  height: 50px;
-  margin: 20px 10% 20px 10%;
-  font-size: 200%;
+  height: 2em;
+  margin: auto 1%;
+  font-size: 120%;
   font-weight: 800;
   color: red;
-  text-align: center;
 }
 
 .output{
-  /* background-color: aquamarine; */
   height: 50px;
   margin: auto;
   text-align: center;
@@ -108,90 +100,75 @@ label{
   font-weight: 800;
 }
 
-
 #advance{
   background-color: rgb(82, 233, 114);
-  width: 90%;
-  height: auto;
-  margin: 0 auto 0 7%;
+  margin: 2% auto;
+  height: max-content;
+  width: 95%;
+  display: grid;
 }
 
 #advance-start-div{
-  background-color: burlywood;
-  height: 200px;
-  margin: 10px 10% 0 10%;
-  display: flex;
+  background-color: aquamarine;
+  margin: 5% auto;
+  height: max-content;
   position: relative;
+  display: grid;
 }
 
 #input-start-advance{
-  margin: auto;
-  position: relative;
   text-align: center;
-  font-size: 800%;
+  width: 2.5em;
+  height: 1.2em;
+  font-size: 500%;
   font-weight: 800;
+  margin: 1% auto;
 }
 
 #advance-ans-div{
-  background-color: burlywood;
-  height: auto;
-  margin: 20px 10% 20px 10%;
   display: flex;
-  position: relative;
-}
-
-#advance-input-answer{
-  width: 200px;
+  margin: 0 auto;
 }
 
 #trance-div{
   background-color: rgb(223, 233, 82);
-  width: 90%;
-  height: auto;
-  margin: 0 auto 0 7%;
-  display: flexbox;
+  margin: 2% auto 5% auto;
+  height: max-content;
+  width: 95%;
+  display: grid;
 }
 
-#text-trance{
-  height: 50px;
-  margin: auto 3% 20px auto;
-  font-size: 200%;
-  font-weight: 800;
-  color: red;
-  text-align: center;
-  position: relative;
+.trance-class{
+  margin: 0 auto 0 5%;
 }
 
 #trance-textarea{
-  /* height: 100px; */
-  margin: 20px 5% 20px 5%;
   display: flex;
-  position: relative;
-}
-
-#trance-button-div{
-  height: 80px;
-  margin: 20px 5% 10px 5%;
-  display: flex;
-  position: relative;
 }
 
 #kana-input{
-  width: 90%;
+  width: 80%;
   margin: auto;
-  font-size: 150%;
   text-align: left;
+}
+
+#trance-button-div{
+  display: flex;
+  margin: 1% auto;
+}
+
+#text-trance{
+  height: 2em;
+  margin: auto 1%;
+  font-size: 120%;
+  font-weight: 800;
+  color: red;
 }
 
 #trance-output{
   height: auto;
-  margin: auto 2% 100px 5%;
+  margin: auto 2% 1em 5%;
   text-align: left;
-  font-size: 150%;
-  /* color: red; */
+  font-size: 100%;
   font-weight: 600;
 }
-
-
-
-

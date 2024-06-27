@@ -7,11 +7,12 @@
   <meta name="theme-color" content="#000000">
   <title>手旗訓練編</title>
   <link rel="stylesheet" href="flag-training.css">
+  <script src="flag-training.js" defer></script>
 </head>
 
 <body>
   <h1 class="maintext">ボーイスカウト隊 隊長からの指令</h1>
-  <h1 id="subtext">～ 手旗訓練編 ～</h1>
+  <h1 class="subtext">～ 手旗訓練編 ～</h1>
   
   <div id="basic">
     <h2 class="traning">基本訓練</h2>
@@ -21,7 +22,7 @@
       ③ 逆2原画は「2r」と入力してください</h4>
     <div id="basic-start-div">
       <input type="button" value="開始" id="basic-start-button" class="start-button">
-      <p id="input-start-img"></p>
+      <img id="basic-img" src="flag_bs_start.gif" >
     </div>
     <div id="basic-ans-div">
       <label>回答入力せよ ⇒<br></label>
@@ -54,8 +55,7 @@
 
   <div id="trance-div">
     <h2 id="trance-h2" class="traning">便利機能）カタカナ ⇒ 手旗信号変換</h2>
-    <label>↓↓↓ 変換したい言葉をカタカナ（全角）で入れよ（例：テバタ）</label><br>
-    <!-- <input type="textarea" wrap="soft" id="kana-input" class="answer-text"> -->
+    <label class="trance-class">↓↓↓ 変換したい言葉をカタカナ（全角）で入れよ（例：テバタ）</label><br>
     <div id="trance-textarea">
       <textarea wrap="soft" rows="3" id="kana-input" class="answer-text"></textarea>
     </div>
@@ -64,8 +64,6 @@
     </div>
     <div id="trance-output"></div>
   </div>
-
-  <script src="flag-training.js"></script>
 
 </body>
 
